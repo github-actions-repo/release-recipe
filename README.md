@@ -63,3 +63,13 @@ In the repository, navigate to **Settings | Code security and analysis** and mak
    ```
    gh secret set PAT --app dependabot
    ```
+
+## Clean up
+
+```
+./destroy-azure.sh
+
+# Or
+
+az group delete --resource-group AKSCluster --yes
+```
