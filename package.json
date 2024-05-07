@@ -1,0 +1,25 @@
+{
+  "name": "release-recipe",
+  "version": "1.0.0",
+  "description": "This is a demo application to show a release process.",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "exit 0",
+    "start": "node src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/github-actions-repo/release-recipe.git"
+  },
+  "keywords": [],
+  "author": "Steven Leong",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/github-actions-repo/release-recipe/issues"
+  },
+  "homepage": "https://github.com/github-actions-repo/release-recipe#readme",
+  "dependencies": {
+    "@wulfland/package-recipe": "github:wulfland/package-recipe",
+    "express": "^4.19.2"
+  }
+}

@@ -1,0 +1,25 @@
+version: 2
+registries:
+  npm-pkg:
+    type: npm-registry
+    url: https://npm.pkg.github.com
+    token: ${{ secrets.PAT }}
+    replaces-base: true
+    
+updates:
+  - package-ecosystem: "npm"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+    registries:
+      - npm-pkg
+
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+
+  - package-ecosystem: "docker"
+    directory: "/"
+    schedule:
+      interval: "weekly"
